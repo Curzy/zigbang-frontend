@@ -9,7 +9,9 @@
       "address3": "437-3",
       "floor": "17층",
       "rooms": "356세대",
-      "established": "1987.11"
+      "established": "1987.11",
+      "latitude": 37.5513696,
+      "longitude": 126.953917
     }
   ]
 }
