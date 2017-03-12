@@ -1,7 +1,18 @@
 .RoomInfo {
+  position: relative;
+  top: 20px;
   width: 100%;
+
+  margin-bottom: -60px;
 }
 
+.slider-container {
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+  padding: 5%;
+  background: #000000;
+}
 .money {
   font-size: 1.6em;
   font-weight: bold;

@@ -1,14 +1,37 @@
 import React, { Component } from 'react';
 import SafeAgent from './SafeAgent'
+import Slider from 'react-slick';
 import '../styles/RoomInfo.css';
+import 'slick-carousel/slick/slick-theme.css';
+import 'slick-carousel/slick/slick.css';
+
 
 class RoomInfo extends Component {
   render() {
     const item = this.props.item;
+    const sliderSettings = {
+      dots: false,
+      arrows: false,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 3000
+    }
+
     return (
       <div className='RoomInfo'>
-        <div className='room-pic-container'>
-          <img src={item.img[2]} alt='방 사진' className='room-pic'></img>
+        <div className='slider-container'>
+          <Slider {...sliderSettings}>
+            {item.img.map((img, index) => {
+              return (
+                <div key={index}>
+                  <img src={img} alt='방 사진' className='room-pic'></img>
+                </div>
+              )
+            })}
+          </Slider>
         </div>
         <SafeAgent></SafeAgent>
         <h1 className='room-name'>신사동 예쁜 쓰리룸</h1>
