@@ -21,7 +21,7 @@
   width: 50%;
   height: 100%;
 
-  margin: auto 0;
+  margin: 2vh 0;
   text-align: left;
   align-items: center;
   vertical-align: middle;
@@ -29,6 +29,7 @@
 
 .BottomBar .agent-basic-info {
   display: inline;
+  padding: 0;
 }
 
 .horizontal-section > div {
@@ -56,7 +57,7 @@
 }
 
 .phone {
-  font-size: 5vmin;
+  font-size: 4.5vmin;
   color: #ff780a;
   font-weight: bold;
 }
