@@ -68,7 +68,6 @@ class MapModal extends Component {
               <div>
                 <img src='https://cloud.githubusercontent.com/assets/3931792/23828427/667ca186-0714-11e7-862d-99dbec452df7.jpg' height='43px' alt='로드뷰보기'></img>
               </div>
-              로드뷰보기
             </button>
           </div>
           <div id='roadviewWrapper' style={{ width: 100 + '%', height: 100 + '%', position: 'absolute', top: 0, left: 0, textAlign: 'left', display: this.state.toggleMap ? 'none' : 'block' }}>
@@ -77,7 +76,6 @@ class MapModal extends Component {
               <div>
                 <img src='https://cloud.githubusercontent.com/assets/3931792/23828428/66a7cdde-0714-11e7-812a-57c7d0cb89a5.jpg' height='35px' alt='지도보기'></img>
               </div>
-              지도보기
             </button>
           </div>
         </div>
