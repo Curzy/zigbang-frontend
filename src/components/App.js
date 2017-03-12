@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/App.css';
+
 import TopBar from './TopBar';
 import RoomInfo from './RoomInfo';
 import RoomDescription from './RoomDescription';

@@ -1,0 +1,54 @@
+.MapModal {
+  position: absolute;
+  top: 80px;
+  left: 0;
+
+  width: 100%;
+  height: 90vh;
+}
+
+.map-container {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+#btn-roadview, #btn-map {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+  z-index: 1;
+
+  width: 120px;
+  height: 120px;
+
+  background-color: #ffffff;
+
+  font-family: "Noto Sans CJK KR";
+  font-size: 24px;
+  word-break: keep-all;
+  text-align: center;
+}
+
+#btn-roadview > img, #btn-map > img {
+  margin: 0;
+  border: none;
+
+}
+
+#map-container.view_map #roadviewWrapper {
+  z-index: 10;
+}
+
+#map-container.view_map #btn-map {
+  display: none;
+}
+
+#map-container.view_roadview #mapWrapper {
+  z-index: 0;
+}
+
+#map-container.view_roadview #btn-roadview {
+  display: none;
+}
