@@ -1,0 +1,86 @@
+.BottomBar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 16vh;
+  z-index: 1;
+  background-color: #ffffff;
+}
+
+.section-container {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.horizontal-section {
+  flex: 1;
+  width: 50%;
+  height: 100%;
+
+  margin: auto 0;
+  text-align: left;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.BottomBar .agent-basic-info {
+  display: inline;
+}
+
+.horizontal-section > div {
+  display: inline;
+  vertical-align: middle;
+}
+
+.horizontal-section.agent {
+  padding-left: 4%;
+}
+
+.horizontal-section.call {
+  padding-right: 4%;
+}
+
+.office {
+  font-size: 4vmin;
+  color: #979797;
+}
+
+.agent {
+  font-size: 4.5vmin;
+  color: #000000;
+  font-weight: bold;
+}
+
+.phone {
+  font-size: 5vmin;
+  color: #ff780a;
+  font-weight: bold;
+}
+
+.phone > span {
+  background-color: #f6f6f6;
+  border: 2px solid #848484;
+
+  color: #848484;
+  font-size: 0.8em;
+  font-weight: normal;
+  word-break: keep-all;
+}
+
+.call {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  height: 100%;
+
+  background-image: url('https://cloud.githubusercontent.com/assets/3931792/23833007/e0aab178-0782-11e7-8a5a-1f3b21ad1750.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 90% auto;
+
+  cursor: pointer;
+}

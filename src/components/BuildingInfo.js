@@ -17,7 +17,7 @@ class BuildingInfo extends Component {
             <div className='section'>
               <ul className='building-basic-info'>
                 <li className='building-name'>{building.name}</li>
-                <li>{building.address1} + {building.address2} + {building.address3}</li>
+                <li>{building.address1} {building.address2} {building.address3}</li>
               </ul>
             </div>
             <div className='section'>

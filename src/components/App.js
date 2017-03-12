@@ -9,6 +9,7 @@ import BuildingInfo from './BuildingInfo';
 import Location from './Location';
 import AgentInfo from './AgentInfo';
 import AgentNoti from './AgentNoti';
+import BottomBar from './BottomBar';
 
 import items from '../../public/items.json';
 import buildings from '../../public/buildings.json';
@@ -31,7 +32,7 @@ class App extends Component {
 
     return (
       <div className='App'>
-        <TopBar></TopBar>
+        <TopBar item={item}></TopBar>
         <RoomInfo item={item}></RoomInfo>
         <RoomDescription item={item}></RoomDescription>
         <AgentComment item={item}></AgentComment>
@@ -39,6 +40,7 @@ class App extends Component {
         <Location building={building}></Location>
         <AgentInfo agent={agent}></AgentInfo>
         <AgentNoti></AgentNoti>
+        <BottomBar agent={agent}></BottomBar>
       </div>
     );
   }

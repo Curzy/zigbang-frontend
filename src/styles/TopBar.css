@@ -1,5 +1,67 @@
 .TopBar {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 80px;
+  z-index: 1;
   background-color: #ffa409;
+}
+
+.TopBar > div {
+  display: inline;
+}
+
+.float-left {
+  float: left;
+  width: 15%;
+}
+
+.float-center {
+  float: left;
+  width: 55%;
+}
+
+.float-right {
+  float: right;
+  width: 15%;
+}
+
+.title, .button-container {
+  display: inline;
+  height: 80px;
+}
+
+.title {
+  width: 70%;
+  font-size: 1.3em;
+  color: #ffffff;
+  line-height: 80px;
+}
+
+.button-container {
+  width: 10%;
+  overflow: hidden;
+}
+
+.button {
+  width: 100%;
+  max-width: 100%;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  transform: scale(0.5);
+}
+
+.back {
+  background-image: url('https://cloud.githubusercontent.com/assets/3931792/23832292/3f9c353e-0775-11e7-9855-90e33d0bb36d.png');
+}
+
+.share {
+  background-image: url('https://cloud.githubusercontent.com/assets/3931792/23832254/9ff18598-0774-11e7-962b-d60435bfd77e.png');
+}
+
+.like {
+  background-image: url('https://cloud.githubusercontent.com/assets/3931792/23832253/9df53ec4-0774-11e7-9aee-9528ebdaffa5.png');
 }

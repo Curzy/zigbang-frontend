@@ -5,14 +5,25 @@ class TopBar extends Component {
   render() {
     return (
       <div className='TopBar'>
-        <div className='button back'>
-          <button></button>
+        <div className='float-left'>
+          <div className='button-container'>
+            <div className='button back'></div>
+          </div>
         </div>
-        <div className='button share'>
-          <button></button>
+        <div className='float-center'>
+          <div className='title'>
+            {this.props.item.name}
+          </div>
         </div>
-        <div className='button like'>
-          <button></button>
+        <div className='float-right'>
+          <div className='button-container'>
+            <div className='button like'></div>
+          </div>
+        </div>
+        <div className='float-right'>
+          <div className='button-container'>
+            <div className='button share'></div>
+          </div>
         </div>
       </div>
     )
