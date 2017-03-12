@@ -6,10 +6,11 @@ button {
 
 .btn-map-open {
   width: 50%;
+  height: 80px;
   padding: 0;
   background-color: #ffffff;
 
-  font-size: 34px;
+  font-size: 1.6em;
   color: #333333;
   line-height: 1.7;
 }
@@ -19,7 +20,7 @@ button {
 }
 
 .btn-map-open img {
-  margin-right: 20px;
+  margin-right: 9%;
   vertical-align: sub;
 }
 
@@ -27,27 +28,30 @@ button {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
 
   background-color: #f6f6f6;
 }
 
 .map-modal-container .modal-top-nav {
+  width: 100%;
+  height: 80px;
   background-color: #ffffff;
   vertical-align: middle;
 }
 .modal-top-nav h1 {
   display: inline-block;
+  margin: 15px auto;
   text-align: center;
 }
 
 .modal-top-nav .btn-close {
-  width: 80px;
+  width: 11%;
   height: 80px;
   background-color: #ffffff;
 
-  font-size: 34px;
+  font-size: 2.125em;
 
   float: right;
 }

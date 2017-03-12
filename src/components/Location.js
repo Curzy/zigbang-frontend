@@ -7,8 +7,9 @@ class Location extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      toggleMapModal:  true
-    }
+      toggleModal: false,
+      toggleMap: true
+    };
   }
   componentDidMount() {
     const building = this.props.building;
@@ -37,14 +38,14 @@ class Location extends Component {
   render() {
     let mapModal = null;
 
-    if (this.state.toggleMapModal) {
+    if (this.state.toggleModal) {
       mapModal =
         <div className='map-modal-container'>
           <div className='modal-top-nav'>
             <h1>위치보기</h1>
-            <button className='btn-close' onClick={() => {this.setState({toggleMapModal: false})}}>X</button>
+            <button className='btn-close' onClick={() => {this.setState({toggleModal: false})}}>X</button>
           </div>
-          <MapModal building={this.props.building}></MapModal>
+          <MapModal building={this.props.building} currentMap={this.state.toggleMap}></MapModal>
         </div>;
     };
 
@@ -52,12 +53,12 @@ class Location extends Component {
       <div className='Location'>
         <h2>위치보기</h2>
         <div className='infobox'>
-          <div id='map' style={{ width: 676 + 'px', height: 404 + 'px' }}></div>
-          <button className='btn-map-open' onClick={() => {this.setState({toggleMapModal: true})}}>
+          <div id='map' style={{ width: 100 + '%', height: 400 + 'px', zIndex: 0 }}></div>
+          <button className='btn-map-open' onClick={() => {this.setState({toggleModal: true, toggleMap: true})}}>
             <img src='https://cloud.githubusercontent.com/assets/3931792/23828428/66a7cdde-0714-11e7-812a-57c7d0cb89a5.jpg' height='35px' alt='지도보기'></img>
             지도보기
           </button>
-          <button className='btn-map-open' onClick={() => {this.setState({toggleMapModal: true})}}>
+          <button className='btn-map-open' onClick={() => {this.setState({toggleModal: true, toggleMap: false})}}>
             <img src='https://cloud.githubusercontent.com/assets/3931792/23828427/667ca186-0714-11e7-862d-99dbec452df7.jpg' height='43px' alt='로드뷰보기'></img>
             로드뷰보기
           </button>

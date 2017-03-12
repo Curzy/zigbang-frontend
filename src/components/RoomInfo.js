@@ -8,11 +8,13 @@ class RoomInfo extends Component {
     return (
       <div className='RoomInfo'>
         <div className='room-pic-container'>
-          <img src={item.img[0]} alt='대표사진' className='room-pic' width='width'></img>
+          <img src={item.img[0]} alt='대표사진' className='room-pic'></img>
         </div>
         <SafeAgent></SafeAgent>
         <h1 className='room-name'>신사동 예쁜 쓰리룸</h1>
         <div className='infobox'>
+          <div className='price-pic-container'>
+          </div>
           <table>
             <tbody>
               <tr>

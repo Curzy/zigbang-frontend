@@ -6,13 +6,14 @@ class MapModal extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      toggleMap: true
+      toggleMap: this.props.currentMap
     };
   }
 
   componentDidMount() {
     const building = this.props.building;
 
+    console.log(building)
     const mapContainer = document.getElementById('modal-map');
     const position = new daum.maps.LatLng(building.latitude, building.longitude)
     const mapOptions = {
@@ -63,17 +64,21 @@ class MapModal extends Component {
     return (
       <div className='MapModal'>
         <div id='map-container'>
-          <div id='mapWrapper' style={{ width: 100 + '%', height: 100 + '%', position: 'absolute', top: 0, left: 0, textAlign: 'left', display: this.state.toggleMap ? 'block' : 'none' }}>
+          <div id='mapWrapper' style={{ width: 100 + '%', height: 100 + 'vh', position: 'relative', display: this.state.toggleMap ? 'block' : 'none' }}>
             <div id='modal-map' style={{ width: 100 + '%', height: 100 + '%' }}></div>
             <button id='btn-roadview' onClick={() => {this.setState({toggleMap: false})}}>
-              <img src='https://cloud.githubusercontent.com/assets/3931792/23828427/667ca186-0714-11e7-862d-99dbec452df7.jpg' height='43px' alt='로드뷰보기'></img>
+              <div>
+                <img src='https://cloud.githubusercontent.com/assets/3931792/23828427/667ca186-0714-11e7-862d-99dbec452df7.jpg' height='43px' alt='로드뷰보기'></img>
+              </div>
               로드뷰보기
             </button>
           </div>
           <div id='roadviewWrapper' style={{ width: 100 + '%', height: 100 + '%', position: 'absolute', top: 0, left: 0, textAlign: 'left', display: this.state.toggleMap ? 'none' : 'block' }}>
             <div id='modal-roadview' style={{ height: 100 + '%' }}></div>
             <button id='btn-map' onClick={() => {this.setState({toggleMap: true})}}>
-              <img src='https://cloud.githubusercontent.com/assets/3931792/23828428/66a7cdde-0714-11e7-812a-57c7d0cb89a5.jpg' height='35px' alt='지도보기'></img>
+              <div>
+                <img src='https://cloud.githubusercontent.com/assets/3931792/23828428/66a7cdde-0714-11e7-812a-57c7d0cb89a5.jpg' height='35px' alt='지도보기'></img>
+              </div>
               지도보기
             </button>
           </div>

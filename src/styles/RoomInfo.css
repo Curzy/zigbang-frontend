@@ -1,16 +1,45 @@
+.RoomInfo {
+  width: 100%;
+}
+
 .money {
-  font-size: 34px;
+  font-size: 1.6em;
   font-weight: bold;
   color: #ff780a;
 }
 
+.infobox {
+  position: relative;
+}
+
 .room-pic-container {
-  width: 720px;
-  height: 720px;
-  overflow: hidden;
+  position: relative;
+  top: -54px;
+  margin-bottom: -60px;
 }
 
 .room-pic {
-  max-width: 720px;
-  margin: -100%;
+  max-width: 100%;
+  height: auto;
+  clip-path: inset(54px 0px 0px 0px);
+}
+
+.price-pic-container {
+  position: absolute;
+  top: 40px;
+  left: 65%;
+
+  width: 30%;
+  height: 30%;
+
+  background-image: url('https://cloud.githubusercontent.com/assets/3931792/23830766/b3d6b1a6-0755-11e7-9596-deb47972bd56.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.real-price-confirm {
+
+  width: 100%;
+  height: auto;
+
 }

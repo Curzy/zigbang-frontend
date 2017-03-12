@@ -4,9 +4,11 @@ import SafeAgentImg from '../../public/SafeAgent.jpg'
 
 class SafeAgent extends Component {
   render() {
+    const agent = this.props.agent;
+
     return (
       <div className='SafeAgent'>
-        <img src={SafeAgentImg} alt='안심중개사' width='100%'></img>
+        <img src={SafeAgentImg} alt='안심중개사' width='100%' height='auto'></img>
       </div>
     )
   }

@@ -1,22 +1,14 @@
-body {
-  margin: 0;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
-  background-color: #f6f6f6;
-  font-family: "Noto Sans CJK KR";
-}
-
 .App {
-  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
   text-align: center;
   background-color: #f6f6f6;
 }
 
 h1, h2 {
-  margin-left: 40px;
+  margin-left: 8%;
   text-align: left;
-  font-size: 34px;
+  font-size: 1.6em;
   font-weight: bold;
 }
 
@@ -29,8 +21,8 @@ h2 {
 }
 
 .infobox {
-  width: 676px;
-  margin: 22px;
+  width: 92%;
+  margin: 4%;
   border: 2px solid #e1e1e1;
   background-color: #ffffff;
 }
@@ -44,13 +36,13 @@ h2 {
 }
 
 .infobox th, td {
-  font-size: 26px;
-  padding: 20px;
+  font-size: 1em;
+  padding: 4%;
   text-align: left;
 }
 
 .infobox th {
-  width: 210px;
+  width: 30%;
   background-color: #fbfbfb;
   color: #6a6a6a;
 }
@@ -60,8 +52,8 @@ h2 {
 }
 
 .infobox p {
-  margin: 20px;
-  font-size: 26px;
+  margin: 4%;
+  font-size: 1em;
   text-align: left;
   color: #000000;
   line-height: 1.7;
