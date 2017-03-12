@@ -1,0 +1,42 @@
+.AgentInfo > .infobox {
+  text-align: left;
+  padding: 4%;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 4% 0;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.agent-pic {
+  display: inline-block;
+  width: 28%;
+  height: auto;
+}
+
+.agent-pic > img {
+  width: 100%;
+  height: auto;
+}
+
+.agent-basic-info {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+
+  list-style-type: none;
+}
+
+.agent-name {
+  font-weight: bold;
+}
+
+h3 {
+  margin: 0;
+}
+
+.office-basic-info {
+  padding-left: 4%;
+  margin: 0;
+}

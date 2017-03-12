@@ -13,7 +13,6 @@ class MapModal extends Component {
   componentDidMount() {
     const building = this.props.building;
 
-    console.log(building)
     const mapContainer = document.getElementById('modal-map');
     const position = new daum.maps.LatLng(building.latitude, building.longitude)
     const mapOptions = {
@@ -32,7 +31,6 @@ class MapModal extends Component {
 
 
     const map = new daum.maps.Map(mapContainer, mapOptions);
-    console.log(map);
     map.addControl(mapTypeControl, daum.maps.ControlPosition.TOPRIGHT);
     map.addControl(zoomControl, daum.maps.ControlPosition.RIGHT);
     circle.setMap(map);

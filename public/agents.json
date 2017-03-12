@@ -1,0 +1,17 @@
+{
+  "datas": [
+    {
+      "id": "18304",
+      "img": "https://cloud.githubusercontent.com/assets/3931792/23831007/1bbb0b0a-075b-11e7-9eae-89f35d755b41.jpg",
+      "name": "이갑영",
+      "email": "okok@naver.com",
+      "agentPhone": "010-1234-4567",
+      "address1": "서울시",
+      "address2": "마포구",
+      "office": "테리 부동산",
+      "representative": "김테리",
+      "isRepresentative": true,
+      "officePhone": "1588-1688"
+    }
+  ]
+}

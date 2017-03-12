@@ -11,19 +11,22 @@ import AgentInfo from './AgentInfo';
 
 import items from '../../public/items.json';
 import buildings from '../../public/buildings.json';
+import agents from '../../public/agents.json';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       item: items.datas[0],
-      building: buildings.datas[0]
+      building: buildings.datas[0],
+      agent: agents.datas[0]
     };
   }
 
   render() {
     const item = this.state.item;
     const building = this.state.building;
+    const agent = this.state.agent;
 
     return (
       <div className='App'>
@@ -33,7 +36,7 @@ class App extends Component {
         <AgentComment item={item}></AgentComment>
         <BuildingInfo building={building}></BuildingInfo>
         <Location building={building}></Location>
-        <AgentInfo></AgentInfo>
+        <AgentInfo agent={agent}></AgentInfo>
       </div>
     );
   }
