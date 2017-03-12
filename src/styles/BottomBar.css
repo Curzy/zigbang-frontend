@@ -4,7 +4,7 @@
   left: 0;
 
   width: 100%;
-  height: 16vh;
+  height: 18vmax;
   z-index: 1;
   background-color: #ffffff;
 }
@@ -32,7 +32,7 @@
   padding: 0;
 }
 
-.horizontal-section > div {
+.BottomBar .horizontal-section > div {
   display: inline;
   vertical-align: middle;
 }

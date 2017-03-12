@@ -15,9 +15,14 @@
 }
 
 .horizontal-section {
-  display: inline-block;
+  flex: 1;
   width: 50%;
-  align-items: stretch;
+  height: 100%;
+
+  margin: 2vh 0;
+  text-align: left;
+  align-items: center;
+  vertical-align: middle;
 }
 
 .BuildingInfo .section {
