@@ -36,19 +36,3 @@
   border: none;
 
 }
-
-#map-container.view_map #roadviewWrapper {
-  z-index: 10;
-}
-
-#map-container.view_map #btn-map {
-  display: none;
-}
-
-#map-container.view_roadview #mapWrapper {
-  z-index: 0;
-}
-
-#map-container.view_roadview #btn-roadview {
-  display: none;
-}
