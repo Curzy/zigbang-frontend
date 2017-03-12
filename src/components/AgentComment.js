@@ -6,7 +6,7 @@ class AgentComment extends Component {
       <div className='AgentComment'>
         <h2 className='infobox-title'>담당자 한마디</h2>
         <div className='infobox'>
-          <p>{this.props.item.agentComment}</p>
+          <p dangerouslySetInnerHTML={{ __html: this.props.item.agentComment.replace(/\n/g, '<br/>') }}></p>
         </div>
       </div>
     )

@@ -1,0 +1,16 @@
+.money {
+  font-size: 34px;
+  font-weight: bold;
+  color: #ff780a;
+}
+
+.room-pic-container {
+  width: 720px;
+  height: 720px;
+  overflow: hidden;
+}
+
+.room-pic {
+  max-width: 720px;
+  margin: -100%;
+}

@@ -4,9 +4,8 @@ class BuildingInfo extends Component {
   render() {
     return (
       <div className='BuildingInfo'>
-        <h2>위치보기</h2>
+        <h2>건물정보</h2>
         <div className='infobox'>
-          <div id='map'></div>
         </div>
       </div>
     )

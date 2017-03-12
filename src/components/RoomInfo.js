@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import SafeAgent from './SafeAgent'
+import '../styles/RoomInfo.css';
 
 class RoomInfo extends Component {
   render() {
     const item = this.props.item;
     return (
       <div className='RoomInfo'>
-        <img src={item.img[0]} alt='대표사진' width='100%'></img>
+        <div className='room-pic-container'>
+          <img src={item.img[0]} alt='대표사진' className='room-pic' width='width'></img>
+        </div>
         <SafeAgent></SafeAgent>
         <h1 className='room-name'>신사동 예쁜 쓰리룸</h1>
         <div className='infobox'>
@@ -24,6 +27,8 @@ class RoomInfo extends Component {
                 <th>등록번호</th>
                 <td>{item.id}</td>
               </tr>
+            </tbody>
+            <tbody>
               <tr>
                 <th>주소</th>
                 <td>{item.address1} {item.address2} {item.address3}</td>

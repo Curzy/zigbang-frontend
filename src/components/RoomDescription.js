@@ -6,7 +6,7 @@ class RoomDescription extends Component {
       <div className='RoomDescription'>
         <h2 className='infobox-title'>상세설명</h2>
         <div className='infobox'>
-          <p>{this.props.item.description}</p>
+          <p dangerouslySetInnerHTML={{ __html: this.props.item.description.replace(/\n/g, '<br/>') }}></p>
         </div>
       </div>
     )
