@@ -1,0 +1,49 @@
+.BuildingInfo > .infobox {
+  display: flex;
+  text-align: left;
+  padding: 4%;
+  margin: 0 auto;
+}
+
+.BuildingInfo ul {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  padding-left: 0;
+
+  list-style-type: none;
+}
+
+.horizontal-section {
+  display: inline-block;
+  width: 50%;
+  align-items: stretch;
+}
+
+.BuildingInfo .section {
+  margin-left: 8%;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.section:last-of-type {
+  border: none;
+}
+
+.building-pic-container {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.building-pic-container > img {
+  width: 100%;
+  height: 100%;
+}
+
+.building-name {
+  font-weight: bold;
+}
+
+.building-detail-info {
+  font-weight: bold;
+}

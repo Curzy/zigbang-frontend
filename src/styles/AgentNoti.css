@@ -1,0 +1,7 @@
+.infobox.warning {
+  background: #848484;
+}
+
+.infobox.warning > p {
+  color: #ffffff;
+}

@@ -40,3 +40,12 @@ h3 {
   padding-left: 4%;
   margin: 0;
 }
+
+.경고_copy_4 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 720px;
+  height: 4900px;
+  z-index: 48;
+}

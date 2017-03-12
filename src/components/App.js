@@ -8,6 +8,7 @@ import AgentComment from './AgentComment';
 import BuildingInfo from './BuildingInfo';
 import Location from './Location';
 import AgentInfo from './AgentInfo';
+import AgentNoti from './AgentNoti';
 
 import items from '../../public/items.json';
 import buildings from '../../public/buildings.json';
@@ -37,6 +38,7 @@ class App extends Component {
         <BuildingInfo building={building}></BuildingInfo>
         <Location building={building}></Location>
         <AgentInfo agent={agent}></AgentInfo>
+        <AgentNoti></AgentNoti>
       </div>
     );
   }
